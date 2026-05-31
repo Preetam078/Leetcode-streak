@@ -9,7 +9,7 @@ var vowelStrings = function(words, queries) {
         return vowelSet.has(word[0]) && vowelSet.has(word[word.length - 1]);
     };
 
-    const prefixArray = new Int32Array(words.length);
+    const prefixArray = new Array(words.length);
     prefixArray[0] = checkVowel(words[0]) ? 1 : 0;
 
     for (let i = 1; i < words.length; i++) {
